@@ -20,7 +20,7 @@ class Register extends React.Component {
     const user = Object.assign({}, this.state.user, { [name]: value });
     this.setState({ user });
 
-    const errors = Object.assign({}, this.state.errors, { [name]: '' });
+    const errors = Object.assign({},{ [name]: '' });
     this.setState({ user, errors });
   }
 
