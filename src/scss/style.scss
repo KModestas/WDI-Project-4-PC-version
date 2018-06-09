@@ -1,0 +1,209 @@
+body {
+  background: url('https://images.unsplash.com/photo-1473261422289-ece70cf625d3?ixlib=rb-0.3.5&s=f8718131b5d541569743bad962b09cbb&auto=format&fit=crop&w=1050&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-shadow: 3px 3px 10px #000000, 3px 3px 10px rgb(83, 21, 175);
+  font-family: 'Roboto', sans-serif !important;
+
+}
+
+
+video {
+      position: fixed;
+      min : {
+        width: 100%;
+        height: 100%;
+      }
+      width: auto;
+      height: auto;
+      z-index: -100;
+  // margin-top: -20px;
+}
+
+button {
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.6);
+  color: #f6fcde;;
+  &:hover {
+        cursor: pointer;
+        color: #e8a93c !important;
+    }
+
+}
+
+.proceed {
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  position: relative;
+  top: 40px;
+}
+
+
+
+// prevent content going behind the navbar
+.marginDiv {
+  height: 180px;
+  width: 100%;
+}
+
+// NAVBAR
+.getInfront {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+
+  .navLinks {
+    font-size: 25px;
+    margin: 5px;
+    color: #f6fcde;
+    margin-left: 15px;
+  }
+  .navLinkContainer {
+    display: flex;
+    justify-content: center;
+    background: rgba(24, 6, 51, .6);
+    border-bottom: 2px solid rgba(83, 21, 175, .6);
+    width: 100%;
+    margin-top: 5px;
+  }
+  .headings {
+    color: white;
+    display: flex;
+    justify-content: center;
+    background: rgba(24, 6, 51, .6);
+    border-bottom: 2px solid rgba(83, 21, 175, .6);
+    margin-bottom: 12px;
+    }
+  }
+
+
+
+
+.aboutText {
+  color: white;
+  width: 700px;
+  margin: 300px auto;
+  font-size: 28px;
+ text: {
+   align: center;
+   shadow: 3px 3px #000000;
+ }
+}
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+// for z index to work element needs to be positioned. also z index is applied to all children so it cannot be applied to a container div
+
+.gigShadow {
+  text-shadow: 0 0 10px rgb(83, 21, 175);
+  transition: all 1s;
+  &:hover {
+    text-shadow: 0 0 50px #e8a93c;
+  }
+}
+
+
+// individual Gigs
+
+.block {
+  padding: 10px;
+  margin: 5px;
+
+  h3 {
+    color: #f6fcde;
+    max : {
+      width: 280px;
+      height: 200px;
+    }
+    min : {
+      width: 280px;
+      height: 60px;
+    }
+
+  p, h4 {
+    max-width: 280px;
+  }
+}
+}
+
+
+
+// .darkBackground {
+//   background: rgba(0,0,0,0.7);
+// }
+
+
+.green {
+  color: #d8fcd6;
+  margin: 40px 0 70px 0;
+  text-align: center;
+}
+
+
+a {
+  color: #f6fcde;
+  text-decoration: none !important;
+  &:hover {
+        color: #e8a93c !important;
+    }
+}
+
+// give good map a height so it can be seen
+.google-map {
+  height: 50vh;
+  opacity: 0.9;
+  border: 3px solid rgb(83, 21, 175);
+  margin-top: 40px;
+}
+
+// filtering on index page
+.order {
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  .sorting {
+    margin : {
+      right: 20px;
+      bottom: 15px;
+    }
+    background:  rgb(24, 6, 51);
+    color: white;
+    padding: 5px;
+    width: 300px;
+  }
+
+  .filtering {
+    background:  rgb(24, 6, 51);
+    color: #fff;
+    border-radius: 6px;
+    width: 300px;
+
+  }
+}
+
+.white {
+   color: white !important;
+ }
+
+
+.errorMsg {
+  color: #e8a93c;
+  text-shadow: 2px 2px #000000;
+}
+
+.authForm {
+  margin-top: 50px;
+  padding: 20px;
+}
