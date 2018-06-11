@@ -20,7 +20,7 @@ class Login extends React.Component {
     const user = Object.assign({}, this.state.user, { [name]: value });
     this.setState({ user });
 
-    const errors = Object.assign({},{ [name]: '' });
+    const errors = Object.assign({}, { message: '' });
     this.setState({ user, errors });
   }
 
